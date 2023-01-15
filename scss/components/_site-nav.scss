@@ -19,27 +19,28 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.site-nav__link:hover,
-.site-nav__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
 }
 
 .site-nav__link--current {
     position: relative;
     color: var(--accent-color);
-}
 
-.site-nav__link--current::after {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: '';
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
+    &::after {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: '';
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
 
-    background-color: var(--accent-color);
+        background-color: var(--accent-color);
+    }
 }
